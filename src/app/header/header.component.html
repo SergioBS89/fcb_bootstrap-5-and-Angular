@@ -1,0 +1,38 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <span class="navbar-brand">
+            <h1 class="just-brand">JUST</h1>
+            <img src="../../assets/img/logo_title.png" alt="Just FCB">
+        </span>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- ms-lg-auto move to right elements in nav, other option is adding in the above class .justify-content-end-->
+            <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">Welcome Culer</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        More +
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" [routerLink]="['history']" fragment="players">Players</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['history']" fragment="best-moments">Best Moments</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['history']" fragment="trophies">Trophies</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="merchandising">Merchandising</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about-us">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
